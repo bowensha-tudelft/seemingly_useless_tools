@@ -1,13 +1,19 @@
 # seemingly_useless_tools
 
-Small command-line tools that are probably useless until the exact five-minute moment when they are not.
+Small utilities that are probably useless until the exact five-minute moment when they are not.
 
-This repository currently contains two Python scripts:
+This repository collects a small set of utilities and related files.
+
+The list below reflects the current contents and can grow over time:
 
 - `gjf_swap.py` — reorder selected atoms in a Gaussian `.gjf` input file.
 - `mol_box.py` — calculate simple molecular simulation box composition, density, volume, and cubic box length.
+- `deepseek-pricing-extension.zip` — Chrome extension for adding prices to DeepSeek Usage token tooltips.
+- `bilibili-tab-sorter.zip` — Chrome extension for sorting open Bilibili tabs by video duration.
 
-Both scripts use only the Python standard library.
+The Python-based tools use only the Python standard library.
+
+The browser extensions are packaged as zip archives in the repository root for easy download and unpacking.
 
 ---
 
@@ -24,7 +30,7 @@ On Windows PowerShell, Linux bash, or macOS zsh/bash, quote arguments that conta
 
 ### Purpose
 
-`gjf_swap.py` reads a Gaussian `.gjf` file, detects the coordinate block, prints the molecular formula and atom count, and moves selected atoms to either the top or bottom of the atom list.
+`gjf_swap.py` works with Gaussian-style `.gjf` files and related simple coordinate inputs: it detects the coordinate block, prints the molecular formula and atom count, and moves selected atoms to either the top or bottom of the atom list.
 
 The selected atoms are moved as full coordinate lines, so the element name and its coordinates stay together.
 
@@ -99,7 +105,7 @@ python gjf_swap.py -f molecule.gjf -o molecule_bottom.gjf -atoms "2,8" -b -v
 
 ### Purpose
 
-`mol_box.py` calculates simple molecular simulation box quantities:
+`mol_box.py` covers a few simple molecular box calculations:
 
 1. molecule counts,
 2. density,
