@@ -220,6 +220,10 @@ python mol_box.py -species "H2O:NH3:HF=3:2:1" -density 1.0 -volume 10
 
 The extension keeps the existing tooltip structure intact and only adds the price annotation next to the token counts.
 
+### Demo
+
+![DeepSeek Usage demo](deepseek-pricing-extension.png)
+
 ### What it covers
 
 - `Input (Cache hit)`
@@ -254,6 +258,10 @@ The extension also handles a few practical cases:
 - non-Bilibili tabs stay where they are,
 - sleep/discarded tabs can be woken up and rescanned,
 - pinned tabs are kept separate from the sorting flow.
+
+### Demo
+
+![Bilibili tab sorter demo](bilibili-tab-sorter.png)
 
 ### What it covers
 
