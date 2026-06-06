@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Bilibili Tab Sorter",
+  "version": "1.0",
+  "description": "按视频时长排序已打开的B站标签页",
+  "permissions": ["tabs", "scripting", "storage"],
+  "host_permissions": ["*://*.bilibili.com/*", "*://bilibili.com/*"],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "B站标签页排序",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+}

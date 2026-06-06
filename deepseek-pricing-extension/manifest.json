@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "DeepSeek Usage Pricing",
+  "version": "1.0",
+  "description": "在 DeepSeek Platform Usage 页面的 Tokens 图表 tooltip 中显示对应的价格",
+  "permissions": [],
+  "host_permissions": [
+    "https://platform.deepseek.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://platform.deepseek.com/usage*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
