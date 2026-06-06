@@ -36,4 +36,4 @@ Detailed docs: [bilibili-tab-sorter/README.md](bilibili-tab-sorter/README.md)
 
 ## License
 
-No license has been chosen yet.
+GPL-3.0. See [LICENSE](LICENSE).
