@@ -212,6 +212,73 @@ python mol_box.py -species "H2O:NH3:HF=3:2:1" -density 1.0 -volume 10
 
 ---
 
+## `deepseek-pricing-extension.zip`
+
+### Purpose
+
+`deepseek-pricing-extension.zip` contains a Chrome extension for the DeepSeek Platform Usage page. It watches the token tooltip on the usage chart and appends the corresponding RMB price to each token line.
+
+The extension keeps the existing tooltip structure intact and only adds the price annotation next to the token counts.
+
+### What it covers
+
+- `Input (Cache hit)`
+- `Input (Cache miss)`
+- `Output`
+- the total token line shown in the tooltip
+
+### Installation
+
+1. Unzip `deepseek-pricing-extension.zip`.
+2. Open Chrome and go to `chrome://extensions/`.
+3. Turn on Developer mode.
+4. Load the unzipped folder as an unpacked extension.
+5. Visit `https://platform.deepseek.com/usage`.
+
+### Notes
+
+- The extension is designed for the Usage page tooltip on `platform.deepseek.com`.
+- Price calculation is done locally in the browser.
+- The current pricing table covers the models included in the extension source.
+
+---
+
+## `bilibili-tab-sorter.zip`
+
+### Purpose
+
+`bilibili-tab-sorter.zip` contains a Chrome extension for sorting open Bilibili tabs in the current window by video duration. It scans the visible Bilibili tabs, extracts durations with several fallback methods, and reorders the tabs from short to long.
+
+The extension also handles a few practical cases:
+
+- non-Bilibili tabs stay where they are,
+- sleep/discarded tabs can be woken up and rescanned,
+- pinned tabs are kept separate from the sorting flow.
+
+### What it covers
+
+- sorting open Bilibili video tabs by duration
+- preserving non-Bilibili tabs in place
+- showing a summary of the current window
+- waking discarded tabs and rescanning them
+- pinning tabs so they stay fixed across refreshes
+
+### Installation
+
+1. Unzip `bilibili-tab-sorter.zip`.
+2. Open Chrome and go to `chrome://extensions/`.
+3. Turn on Developer mode.
+4. Load the unzipped folder as an unpacked extension.
+5. Open a few Bilibili video tabs and use the extension popup.
+
+### Notes
+
+- The extension works locally in the browser.
+- Duration detection uses several fallback sources, including page state, inline data, and visible playback metadata.
+- Pinned tabs are stored locally in Chrome storage.
+
+---
+
 ## License
 
 No license has been chosen yet.
